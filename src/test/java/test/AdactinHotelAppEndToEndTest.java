@@ -17,21 +17,22 @@ public class AdactinHotelAppEndToEndTest extends BaseClass {
 	  l.enter_username("prabamahi");
 	  l.enter_passwor("praba123");
 	  l.login();
+	  verify_login();
+	  
   }
-  @Test(priority=1)
   public void verify_login()
   {
-	  String expected_url="https://adactinhotelapp.com/SearchHotel.php";
+	  String expected_url="https://adactinhotlapp.com/SearchHotel.php";
 	  Assert.assertEquals(expected_url,driver.getCurrentUrl());
   }
-  @Test(priority=2)
+  @Test(priority=1)
   public void searchHotel()
   {
 	  SearchHotelPage sh=new SearchHotelPage(driver);
 	  sh.select_loc("Sydney");
 	  sh.search_click();
+	  verify_searchHotel();
   }
-  @Test(priority=3)
   public void verify_searchHotel()
   {
 	String selectHotel_url="https://adactinhotelapp.com/SelectHotel.php";

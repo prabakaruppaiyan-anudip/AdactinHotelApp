@@ -5,9 +5,9 @@
     <classes>
       <class name="test.LoginWithMultipleUsers">
         <methods>
-          <include name="setUp"/>
           <include name="loginPositive" invocation-numbers="0 1 2"/>
-          <include name="closeApp"/>
+          <include name="setUp"/>
+          <include name="takeScreenshotOnFailure"/>
         </methods>
       </class> <!-- test.LoginWithMultipleUsers -->
     </classes>

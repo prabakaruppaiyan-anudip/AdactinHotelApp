@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-15T21:36:58 IST" name="Suite" finished-at="2026-02-15T21:37:07 IST" duration-ms="8691">
+  <suite started-at="2026-02-16T16:52:38 IST" name="Suite" finished-at="2026-02-16T16:52:47 IST" duration-ms="8594">
     <groups>
     </groups>
-    <test started-at="2026-02-15T21:36:58 IST" name="Test" finished-at="2026-02-15T21:37:07 IST" duration-ms="8691">
+    <test started-at="2026-02-16T16:52:38 IST" name="Test" finished-at="2026-02-16T16:52:47 IST" duration-ms="8594">
       <class name="test.AdactinHotelAppEndToEndTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:55 IST" name="setUp" finished-at="2026-02-15T21:36:58 IST" duration-ms="3052" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:35 IST" name="setUp" finished-at="2026-02-16T16:52:38 IST" duration-ms="3450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:0, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:58 IST" name="login" finished-at="2026-02-15T21:36:59 IST" duration-ms="576" status="PASS">
+        <test-method signature="login()[pri:0, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:38 IST" name="login" finished-at="2026-02-16T16:52:39 IST" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verify_login()[pri:1, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:59 IST" name="verify_login" finished-at="2026-02-15T21:36:59 IST" duration-ms="205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login -->
-        <test-method signature="searchHotel()[pri:2, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:59 IST" name="searchHotel" finished-at="2026-02-15T21:36:59 IST" duration-ms="471" status="PASS">
+        <test-method signature="searchHotel()[pri:1, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:39 IST" name="searchHotel" finished-at="2026-02-16T16:52:40 IST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchHotel -->
-        <test-method signature="verify_searchHotel()[pri:3, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:59 IST" name="verify_searchHotel" finished-at="2026-02-15T21:36:59 IST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_searchHotel -->
-        <test-method signature="select_hotel()[pri:4, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:36:59 IST" name="select_hotel" finished-at="2026-02-15T21:37:00 IST" duration-ms="310" status="PASS">
+        <test-method signature="select_hotel()[pri:4, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:40 IST" name="select_hotel" finished-at="2026-02-16T16:52:40 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_hotel -->
-        <test-method signature="verify_selectHotel()[pri:5, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:37:00 IST" name="verify_selectHotel" finished-at="2026-02-15T21:37:00 IST" duration-ms="182" status="PASS">
+        <test-method signature="verify_selectHotel()[pri:5, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:40 IST" name="verify_selectHotel" finished-at="2026-02-16T16:52:40 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_selectHotel -->
-        <test-method signature="book_hotel()[pri:6, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:37:00 IST" name="book_hotel" finished-at="2026-02-15T21:37:07 IST" duration-ms="6694" status="PASS">
+        <test-method signature="book_hotel()[pri:6, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:40 IST" name="book_hotel" finished-at="2026-02-16T16:52:47 IST" duration-ms="6541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- book_hotel -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdactinHotelAppEndToEndTest@7b205dbd]" started-at="2026-02-15T21:37:07 IST" name="tearDown" finished-at="2026-02-15T21:37:07 IST" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdactinHotelAppEndToEndTest@4a003cbe]" started-at="2026-02-16T16:52:47 IST" name="tearDown" finished-at="2026-02-16T16:52:47 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

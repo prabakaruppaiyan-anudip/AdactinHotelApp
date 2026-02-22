@@ -1,12 +1,17 @@
 package test;
 
+import java.io.File;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -34,8 +39,14 @@ public class LoginWithMultipleUsers {
 		  
 	  }
 	  @AfterMethod
-	  public void closeApp() {
-	      driver.quit();
+	    public void takeScreenshotOnFailure(ITestResult result) throws Exception {
+
+	        if (ITestResult.FAILURE == result.getStatus()) {
+	            TakesScreenshot ts = (TakesScreenshot) driver;
+	            File src = ts.getScreenshotAs(OutputType.FILE);
+	            File dest = new File("C:\\Screenshots\\" + result.getName() + ".png");
+	            FileUtils.copyFile(src, dest);
+	        }
 	  }
 	  @DataProvider(name="testData")
 	  public Object[][] credentials()
