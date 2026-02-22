@@ -22,7 +22,7 @@ public class AdactinHotelAppEndToEndTest extends BaseClass {
   }
   public void verify_login()
   {
-	  String expected_url="https://adactinhotlapp.com/SearchHotel.php";
+	  String expected_url="https://adactinhotelapp.com/SearchHotel.php";
 	  Assert.assertEquals(expected_url,driver.getCurrentUrl());
   }
   @Test(priority=1)

@@ -1,269 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T17:47:22 IST" name="Default suite" finished-at="2026-02-18T17:47:42 IST" duration-ms="19833">
+  <suite started-at="2026-02-22T19:40:33 IST" name="Suite" finished-at="2026-02-22T19:40:42 IST" duration-ms="8382">
     <groups>
     </groups>
-    <test started-at="2026-02-18T17:47:22 IST" name="Default test" finished-at="2026-02-18T17:47:42 IST" duration-ms="19833">
-      <class name="test.LoginWithMultipleUsers">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:22 IST" name="setUp" finished-at="2026-02-18T17:47:27 IST" duration-ms="4176" status="PASS">
+    <test started-at="2026-02-22T19:40:33 IST" name="Test" finished-at="2026-02-22T19:40:42 IST" duration-ms="8382">
+      <class name="test.AdactinHotelAppEndToEndTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:30 IST" name="setUp" finished-at="2026-02-22T19:40:33 IST" duration-ms="3298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:27 IST" name="loginPositive" data-provider="testData" finished-at="2026-02-18T17:47:28 IST" duration-ms="927" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.LoginWithMultipleUsers.loginPositive(LoginWithMultipleUsers.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="login()[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:33 IST" name="login" finished-at="2026-02-22T19:40:34 IST" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPositive -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:28 IST" name="takeScreenshotOnFailure" finished-at="2026-02-18T17:47:28 IST" duration-ms="591" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="searchHotel()[pri:1, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:34 IST" name="searchHotel" finished-at="2026-02-22T19:40:35 IST" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotel -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:34 IST" name="takeScreenshotOnFailure" finished-at="2026-02-22T19:40:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginPositive status=FAILURE method=LoginWithMultipleUsers.loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=AdactinHotelAppEndToEndTest.login()[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:28 IST" name="setUp" finished-at="2026-02-18T17:47:31 IST" duration-ms="3267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:31 IST" name="loginPositive" data-provider="testData" finished-at="2026-02-18T17:47:32 IST" duration-ms="840" status="FAIL">
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="takeScreenshotOnFailure" finished-at="2026-02-22T19:40:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kprab]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pra12]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.LoginWithMultipleUsers.loginPositive(LoginWithMultipleUsers.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPositive -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:32 IST" name="takeScreenshotOnFailure" finished-at="2026-02-18T17:47:33 IST" duration-ms="507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginPositive status=FAILURE method=LoginWithMultipleUsers.loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c] output={null}]]]>
+                <![CDATA[[TestResult name=searchHotel status=SUCCESS method=AdactinHotelAppEndToEndTest.searchHotel()[pri:1, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:33 IST" name="setUp" finished-at="2026-02-18T17:47:36 IST" duration-ms="3385" status="PASS">
+        <test-method signature="select_hotel()[pri:4, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="select_hotel" finished-at="2026-02-22T19:40:35 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:36 IST" name="loginPositive" data-provider="testData" finished-at="2026-02-18T17:47:37 IST" duration-ms="597" status="FAIL">
+        </test-method> <!-- select_hotel -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="takeScreenshotOnFailure" finished-at="2026-02-22T19:40:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://adactinhotelapp.com/] but found [https://adactinhotelapp.com/SearchHotel.php]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.LoginWithMultipleUsers.loginPositive(LoginWithMultipleUsers.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPositive -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:37 IST" name="takeScreenshotOnFailure" finished-at="2026-02-18T17:47:37 IST" duration-ms="504" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginPositive status=FAILURE method=LoginWithMultipleUsers.loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c] output={null}]]]>
+                <![CDATA[[TestResult name=select_hotel status=SUCCESS method=AdactinHotelAppEndToEndTest.select_hotel()[pri:4, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:37 IST" name="setUp" finished-at="2026-02-18T17:47:41 IST" duration-ms="3653" status="PASS">
+        <test-method signature="verify_selectHotel()[pri:5, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="verify_selectHotel" finished-at="2026-02-22T19:40:35 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:41 IST" name="loginPositive" data-provider="testData" finished-at="2026-02-18T17:47:42 IST" duration-ms="1232" status="PASS">
+        </test-method> <!-- verify_selectHotel -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="takeScreenshotOnFailure" finished-at="2026-02-22T19:40:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[prabamahi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[praba123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPositive -->
-        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.LoginWithMultipleUsers@5677323c]" started-at="2026-02-18T17:47:42 IST" name="takeScreenshotOnFailure" finished-at="2026-02-18T17:47:42 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginPositive status=SUCCESS method=LoginWithMultipleUsers.loginPositive(java.lang.String,java.lang.String)[pri:0, instance:test.LoginWithMultipleUsers@5677323c] output={null}]]]>
+                <![CDATA[[TestResult name=verify_selectHotel status=SUCCESS method=AdactinHotelAppEndToEndTest.verify_selectHotel()[pri:5, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailure -->
-      </class> <!-- test.LoginWithMultipleUsers -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="book_hotel()[pri:6, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:35 IST" name="book_hotel" finished-at="2026-02-22T19:40:42 IST" duration-ms="6298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- book_hotel -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:42 IST" name="takeScreenshotOnFailure" finished-at="2026-02-22T19:40:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=book_hotel status=SUCCESS method=AdactinHotelAppEndToEndTest.book_hotel()[pri:6, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdactinHotelAppEndToEndTest@2f16c6b3]" started-at="2026-02-22T19:40:42 IST" name="tearDown" finished-at="2026-02-22T19:40:42 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AdactinHotelAppEndToEndTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
